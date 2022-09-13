@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Prompt:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap">
+    <link rel="icon" href="./imges/icons/des icon.png">
+    <title>My-Design</title>
+</head>
+<body>
+    <i class='bx bxs-up-arrow-square' id="up"></i>
+    <!--start seting box -->
+    <div class="setings-box">
+        <i class='bx bx-cog seting'></i>
+        <div class="seting-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="color-list">
+                    <li class="active" data-color="#1eadcd"></li>
+                    <li data-color="#df1c44"></li>
+                    <li data-color="#800080"></li>
+                    <li data-color="#02BC9A"></li>
+                    <li data-color="#77a2e2"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4>rondom b-g</h4>
+               <div class="random-b-g">
+                <span class="yes active" data-background="yes">Yes</span>
+                <span class="no" data-background="no">No</span>
+               </div>
+            </div>
+            
+            <div class="moon">
+                <h2>dark mood</h2>
+                <button class="dark" onclick="theme()">Dark Mood</button>
+            </div>
+            <button class="reset-option">Reset</button>
+        </div>
+    </div>
+    <!--end seting box -->
+
+
+    <!-- start nav bullets -->
+    <div class="nav-bullets">
+        <div class="bullets" data-section=".about-us">
+            <div class="tool-tip">About Us <i class='bx bxs-right-arrow'> </i></div>
+        </div>
+        <div class="bullets" data-section=".skills">
+            <div class="tool-tip">Our Skills <i class='bx bxs-right-arrow'></i></div>
+        </div>
+        <div class="bullets" data-section=".gallary">
+            <div class="tool-tip">Our Gallary <i class='bx bxs-right-arrow'></i></div>
+        </div>
+        <div class="bullets" data-section=".timeline">
+            <div class="tool-tip">timeline <i class='bx bxs-right-arrow'></i></div>
+        </div>
+        <div class="bullets" data-section=".feauture">
+            <div class="tool-tip">Our Feauture <i class='bx bxs-right-arrow'></i></div>
+        </div>
+        <div class="bullets" data-section=".testimonials">
+            <div class="tool-tip">testimonials <i class='bx bxs-right-arrow'></i></div>
+        </div>
+    </div>
+    <!-- end nav bullets -->
+
+
+<!-- start landing page -->
+<div class="landing-page" id="Home">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header-area">
+        <div class="logo wow bounceInLeft" data-wow-duration="1s">Special <span>Design</span></div>
+        <ul class="links wow bounceInRight" data-wow-duration="1s">
+            <li><a href="#Home" class="active"> Home</a></li>
+            <li><a href="#about us"> about us</a></li>
+            <li><a href="#skills"> skills</a></li>
+            <li><a href="#gallary"> gallary</a></li>
+            <li><a href="#timeline"> timeline</a></li>
+            <li><a href="#feauture"> feauture</a></li>
+            <li><a href="#testimonials"> testimonials</a></li>
+        </ul>
+        <i class='bx bx-menu' id="menu"></i>
+    </div>
+    </div>
+    <div class="intro-text wow flipInY "data-wow-duration="1s">
+        <h1>we are <span>cretive</span>...!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Ipsum ullam molestiae voluptate dolorem adipisci, iste repellat quos enim quidem dolores?</p>
+    </div>
+</div>
+<!-- end landing page -->
+
+<!-- start About us -->
+<div class="container" id="about us">
+    <div class="about-us">
+        <div class="text-box wow fadeInLeftBig" data-wow-duration="1s" data-wow-offset="400">
+            <h2>about us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dicta tempore adipisci neque perferendis amet exercitationem assumenda fuga dolorem molestias cupiditate, non alias cumque id. Tenetur quaerat dolore dolores in.</p>
+        </div>
+        <div class="img-box wow fadeInRightBig" data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/about us.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- end about us -->
+
+
+<!-- start skills -->
+<div class="skills" id="skills">
+    <div class="container">
+        <h2 class="wow flipInY" data-wow-offest="200" data-wow-offset="400">our skills</h2>
+        <div class="skills-box">
+            <div class="skill-name"><img class="html" src="./imges/icons/html icon.png"> HTML</div>
+            <div class="skill-progress">
+                <span data-progress="80%"></span>
+            </div>
+        </div>
+        <div class="skills-box">
+            <div class="skill-name"><img class="html" src="./imges/icons/css icon.png"> CSS</div>
+            <div class="skill-progress">
+                <span data-progress="90%"></span>
+            </div>
+        </div>
+        <div class="skills-box">
+            <div class="skill-name"><img class="html" src="./imges/icons/js icon.png"> Js</div>
+            <div class="skill-progress">
+                <span data-progress="65%"></span>
+            </div>
+        </div>
+        <div class="skills-box">
+            <div class="skill-name"><img class="html" src="./imges/icons/jquery icon.png"> jquery</div>
+            <div class="skill-progress">
+                <span data-progress="70%"></span>
+            </div>
+        </div>
+        <div class="skills-box">
+            <div class="skill-name"><img class="html" src="./imges/icons/bootstrap icon.png"> Bootstrap</div>
+            <div class="skill-progress">
+                <span data-progress="75%"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end skills -->
+
+
+<!--start our gallary -->
+<div class="gallary" id="gallary">
+    <div class="container">
+        <h2 class="wow flipInY" data-wow-offest="200" data-wow-offset="300">our gallary</h2>
+        <div class="imges-box">
+            <img class="wow bounceInLeft"  data-wow-duration="2s" data-wow-offest="300" src="./imges/01.jpg" alt="">
+            <img class="wow bounceInDown"  data-wow-duration="2s" data-wow-offest="300" src="./imges/02.jpg" alt="">
+            <img class="wow fadeInLeftBig"  data-wow-duration="2s" data-wow-offest="300" src="./imges/09.jpg" alt="">
+            <img class="wow fadeInRightBig"  data-wow-duration="2s" data-wow-offest="300" src="./imges/12.jpg" alt="">
+            <img class="wow bounceInRight"  data-wow-duration="2s" data-wow-offest="300" src="./imges/05.jpg" alt="">
+            <img class="wow fadeInDownBig"  data-wow-duration="2s" data-wow-offest="300" src="./imges/06.jpg" alt="">
+            <img class="wow fadeInLeftBig"  data-wow-duration="2s" data-wow-offest="300" src="./imges/07.jpg" alt="">
+            <img class="wow bounceInUp"  data-wow-duration="2s" data-wow-offest="300" src="./imges/08.jpg" alt="">
+            <img class="wow fadeInUp"  data-wow-duration="2s" data-wow-offest="300" src="./imges/03.jpg" alt="">
+            <img class="wow bounceInRight"  data-wow-duration="2s" data-wow-offest="300" src="./imges/10.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!--end our gallary -->
+
+
+<!-- start Time Line -->
+<div class="timeline" id="timeline">
+    <div class="container">
+        <div class="timeline-content">
+
+            <div class="year">2020</div>
+            <div class="left wow fadeInLeftBig" data-wow-duration="1s" data-wow-offset="400">
+                <div class="content">  <i class='bx bxs-right-arrow'></i>
+                    <h3>testing heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero reprehenderit cum cupiditate ad recusandae expedita dolorum perspiciatis assumenda dicta praesentium nostrum voluptates asperiores blanditiis laboriosam quaerat tempora hic ratione.</p>
+                </div>
+            </div>
+                        <!-- clear: both; -->
+            <div class="clear"></div>
+            <div class="right wow bounceInRight" data-wow-duration="1s" data-wow-offset="400">
+                <div class="content"> <i class='bx bxs-left-arrow'></i>
+                    <h3>testing heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero reprehenderit cum cupiditate ad recusandae expedita dolorum perspiciatis assumenda dicta praesentium nostrum voluptates asperiores blanditiis laboriosam quaerat tempora hic ratione.</p>
+                </div>
+            </div>
+                         <!-- clear: both; -->
+            <div class="clear"></div>
+            <div class="year">2021</div>
+
+            <div class="left wow bounceInLeft" data-wow-duration="1s" data-wow-offset="400">
+                <div class="content">  <i class='bx bxs-right-arrow'></i>
+                    <h3>testing heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero reprehenderit cum cupiditate ad recusandae expedita dolorum perspiciatis assumenda dicta praesentium nostrum voluptates asperiores blanditiis laboriosam quaerat tempora hic ratione.</p>
+                </div>
+            </div>
+                    <!-- clear: both; -->
+            <div class="clear"></div>
+            <div class="left wow fadeInLeftBig" data-wow-duration="1s" data-wow-offset="400">
+                <div class="content">  <i class='bx bxs-right-arrow'></i>
+                    <h3>testing heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero reprehenderit cum cupiditate ad recusandae expedita dolorum perspiciatis assumenda dicta praesentium nostrum voluptates asperiores blanditiis laboriosam quaerat tempora hic ratione.</p>
+                </div>
+            </div>
+                         <!-- clear: both; -->
+            <div class="clear"></div>
+            <div class="year">2022</div>
+
+            <div class="right wow fadeInRightBig" data-wow-duration="1s" data-wow-offset="400">
+                <div class="content"> <i class='bx bxs-left-arrow'></i>
+                    <h3>testing heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero reprehenderit cum cupiditate ad recusandae expedita dolorum perspiciatis assumenda dicta praesentium nostrum voluptates asperiores blanditiis laboriosam quaerat tempora hic ratione.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end Time Line -->
+
+
+<!-- start feauture -->
+<div class="feauture" id="feauture">
+    <h2 class="wow flipInY" data-wow-duration="1s" data-wow-offset="400">our feauture</h2>
+    <div class="container">
+        <div class="feat-box wow fadeInLeftBig" data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/icons/graph icon.png" alt="">
+            <h4>development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="feat-box wow fadeInDownBig" data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/icons/color icon.png" alt="">
+            <h4>development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="feat-box wow fadeInRightBig" data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/icons/bord icon.png" alt="">
+            <h4>development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="feat-box wow bounceInLeft" data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/icons/code icon.png" alt="">
+            <h4>development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="feat-box wow bounceInDown data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/icons/playstation icon.png" alt="">
+            <h4>development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="feat-box wow bounceInRight" data-wow-duration="1s" data-wow-offset="400">
+            <img src="./imges/icons/book icon.png" alt="">
+            <h4>development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- end feauture -->
+
+
+<!-- start testimonials -->
+<div class="testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-offset="400">testimonials</h2>
+        <div class="testi-box wow fadeInLeft" data-wow-duration="1s" data-wow-offset="400">
+            <p>Once a page of your product is connected to Paragraph, you and your colleagues can manage it.</p>
+            <div class="person-info">
+                <img src="./imges/testimonials.jpg" alt="">
+                <h4>salah abdelgied</h4>
+                <p>CEO At Company</p>
+            </div>
+        </div>
+        <div class="testi-box wow fadeInDown" data-wow-duration="1s" data-wow-offset="400">
+            <p>With Paragraph, you can edit all product texts and communications in browser.</p>
+            <div class="person-info">
+                <img src="./imges/developer.jpg" alt="">
+                <h4>Ahmed Elsied</h4>
+                <p>CEO At Company</p>
+            </div>
+        </div>
+        <div class="testi-box wow fadeInRight" data-wow-duration="1s" data-wow-offset="400">
+            <p>Once a page of your product is connected to Paragraph, you and your colleagues can manage it.</p>
+            <div class="person-info">
+                <img src="./imges/code.jpg" alt="">
+                <h4>Mohmmed Salah</h4>
+                <p>CEO At Company</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- end testimonials -->
+
+
+<!-- start contact -->
+<div class="contact">
+    <div class="overlay"></div>
+    <div class="container">
+    <h2 class="wow flipInY" data-wow-duration="1s" data-wow-offset="100">contact us</h2>
+    </div>
+    <form action="">
+        <div class="left wow fadeInLeftBig" data-wow-duration="1s" data-wow-offset="100">
+            <input type="text" placeholder="Your Name" name="username">
+            <input type="email" placeholder="Your Email" name="email">
+            <input type="text" placeholder="Phone" name="phone">
+            <input type="text" placeholder="Subject" name="subject">
+        </div>
+        <div class="right wow fadeInRightBig" data-wow-duration="1s" data-wow-offset="50">
+            <textarea name="messege" placeholder="Your Messege"></textarea>
+            <input type="button" value="Send">
+        </div>
+    </form>
+</div>
+<!-- end contact -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+    <script>
+$(document).ready(function() {
+
+    $(".seting").click(()=> {
+        $(".setings-box").toggleClass("open");
+    });
+
+    $('#menu').click(function() {
+            $('.links').toggle();
+    });
+
+const scroll = 300;
+$(window).scroll(function() {
+    $(this).scrollTop();
+
+    if($(window).scrollTop() >= scroll) {
+        $('#up').show();
+        $('#up').click(function() {
+            $(window).scrollTop(0);
+        })
+    }else {
+        $('#up').fadeOut();
+    }
+});
+
+});
+    </script>
+
+</body>
+</html>
